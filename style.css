@@ -1,0 +1,127 @@
+#menu {
+  list-style-type: none;
+  margin: 20px;
+  padding: 25px;
+  background: #ffd3d3;
+  width: 450px;
+  
+}
+#cuerpo{
+  list-style-type: none;
+  margin: 20px;
+  padding: 25px;
+  background-color:#ffd3d3;
+  width: 500px;
+}
+.rosa{
+  background-color:pink;
+}
+.rosa{
+  background-color:pink;
+}
+.rosa{
+  background-color:pink;
+}
+h2{
+  color:DodgerAzul;
+}
+h3{
+  color:#d11766;
+}
+h3{
+  color:hsl(311, 64%, 22%);
+}
+h3{
+  color:#d11766;
+}
+.izq{
+  mrgin-left:100px;
+  background: AD88C6;
+}
+p{
+  mrgin-left:100px;
+  background: AD88C6;
+}
+#todos{
+  margin: 50px;
+  background: FF7ED4;
+}
+#todos2{
+  margin:39px 100px 50px;
+  background: AD88C6;
+  
+}
+#todos3{
+  margin:39px 100px 50px;
+  background: AD88C6;
+  
+}
+#todos4{
+  margin:39px 100px 10px;
+  background: AD88C6;
+  
+}
+#{
+  background-color:#ffd3d3;
+  width: 25%;
+  display: boock;
+}
+p{
+  background-color:#ffd3d3;
+  color: brown;
+  display: inline-block;
+}
+#id1{
+  background-color: #FF8E8F;
+  padding: 20px;
+  width: 15%;
+  margin:10px;
+}
+.sec1{
+  display: inline-block;
+}
+.navbar {
+  background-color: indianred;
+  overflow: hidden;
+}
+
+.navbar a {
+  float: left;
+  display: inline-block;
+  color: plum;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background-color: blue;
+  color: palevioletred;
+}
+nav{
+  background-color: pink;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-center;
+}
+.id1{
+  color: pink;
+  background-color: indianred ;
+  padding: 40px;
+  display: inline-block;
+  text-decoration: none;
+}
+.id1:hover{
+  background-color: palevioletred;
+}
+@media (max-width: 800px){
+  nav{
+    display.flex;
+    background-color: blue;
+    flex-direction: column;
+  }
+  .id1{
+    margin: 10px0;
+  }
+}

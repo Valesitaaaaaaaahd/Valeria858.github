@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horarios</title>
+  <link rel="stylesheet" href="hor.css">
+
+    <style>
+        
+    </style>
+</head>
+<body>
+    <div class="horario">
+        <img src="h.jpg" alt="Horario 1">
+    </div>
+    <div class="horario">
+        <img src="ho.jpg" alt="Horario 2">
+    </div>
+    <div class="horario">
+        <img src="hora.jpg" alt="Horario 3">
+    </div>
+  <div class="boton">
+        <button onclick="showDownloadMenu()" class="btn"><i class="fa fa-download"></i><strong>Descargar Archivos</strong></button>
+        <div id="downloadMenu" style="display: none;">
+            <strong>selecciona los archivos deseados:</strong>
+            <br>
+            <input type="checkbox" id="h1Checkbox" name="h1" value="h.jpg"> <label for="h1Checkbox">222-b</label><br>
+            <input type="checkbox" id="h2Checkbox" name="h2" value="ho.jpg"> <label for="h2Checkbox">222-a</label><br>
+            <input type="checkbox" id="h3Checkbox" name="h3" value="hora.jpg"> <label for="h3Checkbox">622-A</label><br>
+           
+            <input type="checkbox" id="pdfCheckbox" name="pdf" value="horarios.pdf"> <label for="pdfCheckbox">todos</label><br>
+            <button onclick="downloadSelectedFiles()" class="btn"><i class="fa fa-save"></i><strong>Descargar </strong></button>
+        </div>
+    </div>
+    <br>
+  <script>
+        function showDownloadMenu() {
+            var downloadMenu = document.getElementById("downloadMenu");
+            if (downloadMenu.style.display === "none" || downloadMenu.style.display === "") {
+                downloadMenu.style.display = "block";
+            } else {
+                downloadMenu.style.display = "none";
+            }
+        }
+
+        function downloadSelectedFiles() {
+            var checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
+            checkboxes.forEach(function(checkbox) {
+                var filename = checkbox.value;
+                var link = document.createElement('a');
+                link.href = filename;
+                link.download = filename;
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+            });
+        }
+    </script>
+    <!-- Agrega más imágenes de horarios según sea necesario -->
+</body>
+</html>
